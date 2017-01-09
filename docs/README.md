@@ -1,9 +1,9 @@
 # Timeless
-[Heroku link][heroku]
+<!-- [Heroku link][heroku] -->
 [Trello link][trello]
 
-[heroku]:
-[trello]:
+<!-- [heroku]: -->
+[trello]: https://trello.com/b/7cLOVHcr/timeless
 
 ## Minimum Viable Product
 

@@ -1,52 +1,52 @@
 ## Component Hierarchy
 
 **AuthFormContainer**
-  -AuthForm
+  - AuthForm
 
 **HomeContainer**
-  -Home
-  -NavBarContainer
-  -Footer
+  - Home
+  - NavBarContainer
+  - Footer
 
 **PhotoIndex**
-  -NavBarContainer
-  -Footer
+  - NavBarContainer
+  - Footer
 
 **PhotoContainer**
-  -PhotoIndexItem
-    +username
-    +title
-    +description
-    +time
+  - PhotoIndexItem
+    + username
+    + title
+    + description
+    + time
 
 **UserContainer**
-  -NavBarContainer
-  -OwnPhotos
+  - NavBarContainer
+  - OwnPhotos
 
 **AlbumContainer**
-  -AlbumIndex
+  - AlbumIndex
 
 **NavBarContainer**
-  -NavBarItem
+  - NavBarItem
 
 
 **TagsContainer**
-  -PhotoIndex
-  -AlbumIndex
+  - PhotoIndex
+  - AlbumIndex
 
 **PhotoStream**
 
 **Footer**
-  -FooterItems
+  - FooterItems
 
 
-  |Path   | Component   |
-  |-------|-------------|
-  | "/sign-up" | "AuthFormContainer" |
-  | "/sign-in" | "AuthFormContainer" |
-  | "/home" | "HomeContainer" |
-  | "/home/photos/:photoId" | "PhotoContainer" |
-  | "/home/user" | "UserContainer" |
-  | "/home/user/album" | "AlbumContainer" |
-  | "/home/user/photoStream" | "PhotoStream" |
-  | "/home/tags" | "TagsContainer" |
+|Path   | Component   |
+|-------|-------------|
+| "/sign-up" | "AuthFormContainer" |
+| "/sign-in" | "AuthFormContainer" |
+| "/home" | "HomeContainer" |
+| "/home/photos/:photoId" | "PhotoContainer" |
+| "/home/user" | "UserContainer" |
+| "/home/user/album" | "AlbumContainer" |
+| "/home/user/photoStream" | "PhotoStream" |
+| "/home/tags" | "TagsContainer" |

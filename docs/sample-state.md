@@ -13,7 +13,7 @@
     1: {
       title: "Sample Photo",
       body: "Photo description",
-      url: "",
+      image_url: "",
       username: "DAN"
       user_id: 1,
       album_id: 1
@@ -56,7 +56,7 @@
       1: {
         title: 'sample photo',
         username: 'dan',
-        url: "",
+        image_url: "",
         user_id: 1,
         album_id,
         tags:[]

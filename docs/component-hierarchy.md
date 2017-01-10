@@ -45,7 +45,7 @@
 | "/sign-in" | "AuthFormContainer" |
 | "/" | "HomeContainer" |
 | "/photos/:photoId" | "PhotoContainer" |
-| "/user" | "UserContainer" |
-| "/user/album/albumId" | "AlbumContainer" |
-| "/user/photoStream" | "PhotoIndex" |
+| "/user/:userId" | "UserContainer" |
+| "/user/:userId/album/:albumId" | "AlbumContainer" |
+| "/user/:userId/photoIndex" | "PhotoIndex" |
 | "/tags" | "TagsContainer" |

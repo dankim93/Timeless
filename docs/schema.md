@@ -13,7 +13,7 @@ session_token   | string    | not null, indexed, unique
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-data        | string    | not null
+url         | string    | not null
 title       | string    | not null
 description | string    | not null
 user_id     | integer   | not null, foreign key (references users), indexed

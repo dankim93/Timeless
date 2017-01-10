@@ -4,20 +4,21 @@
   - AuthForm
 
 **HomeContainer**
-  - Home
   - NavBarContainer
+  - PhotoIndex
   - Footer
 
 **PhotoIndex**
-  - NavBarContainer
-  - Footer
 
-**PhotoContainer**
+**PhotoIndexContainer**
   - PhotoIndexItem
     + username
     + title
     + description
     + time
+
+**PhotoIndex**
+  - PhotoIndexItem
 
 **UserContainer**
   - NavBarContainer
@@ -29,12 +30,10 @@
 **NavBarContainer**
   - NavBarItem
 
-
 **TagsContainer**
   - PhotoIndex
   - AlbumIndex
 
-**PhotoStream**
 
 **Footer**
   - FooterItems
@@ -44,9 +43,9 @@
 |-------|-------------|
 | "/sign-up" | "AuthFormContainer" |
 | "/sign-in" | "AuthFormContainer" |
-| "/home" | "HomeContainer" |
-| "/home/photos/:photoId" | "PhotoContainer" |
-| "/home/user" | "UserContainer" |
-| "/home/user/album" | "AlbumContainer" |
-| "/home/user/photoStream" | "PhotoStream" |
-| "/home/tags" | "TagsContainer" |
+| "/" | "HomeContainer" |
+| "/photos/:photoId" | "PhotoContainer" |
+| "/user" | "UserContainer" |
+| "/user/album/albumId" | "AlbumContainer" |
+| "/user/photoStream" | "PhotoIndex" |
+| "/tags" | "TagsContainer" |

@@ -1,0 +1,29 @@
+navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+navbar {
+  background-color: deepskyblue;
+  opacity: 50%;
+}
+
+h1.logo {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+nav.login-signup {
+  font-family: 'Quicksand', sans-serif;
+  margin-right: 30px;
+}
+
+nav > a {
+  margin-right: 30px;
+  margin-top: 15px;
+  font-size: 20px;
+  background-color: greenyellow;
+}

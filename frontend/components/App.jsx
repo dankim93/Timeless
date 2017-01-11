@@ -1,10 +1,15 @@
 import React from 'react';
 import StatusContainer from './status/status_container';
+import { Link } from 'react-router';
 
 const App = ({ children }) => (
   <div>
-    <h1>Timeless</h1>
-    <StatusContainer />
+    <header>
+      <Link to="/" className="header-link">
+        <h1>Timeless</h1>
+      </Link>
+      <StatusContainer />
+    </header>
     { children }
   </div>
 );

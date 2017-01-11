@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   root "static_pages#root"
   namespace :api, defaults: {format: :json} do
-    resource :user, only: [:create]
+    resources :users, only: [:create]
     resource :session, only: [:create, :destroy, :show]
   end
 

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+
 const sessionLinks = () => (
   <nav>
-    <Link to="/login" >Login</Link>
-    <Link to="/signup">Sign up</Link>
+    <Link to="/login" >Log In</Link>
+    <Link to="/signup">Sign Up</Link>
   </nav>
 );
+
 
 const personalStatus = (currentUser, logout) => (
 	<nav>

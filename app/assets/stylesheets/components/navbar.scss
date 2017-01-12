@@ -10,20 +10,35 @@ navbar {
 }
 
 h1.logo {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Patrick Hand SC', cursive;
   font-size: 50px;
   margin-left: 30px;
   margin-top: 10px;
 }
 
-nav.login-signup {
+navbar > nav.login-signup {
   font-family: 'Quicksand', sans-serif;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+navbar > nav > h2 {
+  margin-top: 28px;
   margin-right: 30px;
 }
 
-nav > a {
-  margin-right: 30px;
-  margin-top: 15px;
+navbar > nav > a {
+  // padding: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
   font-size: 20px;
-  background-color: greenyellow;
+  // background-color: greenyellow;
+  // margin-bottom: 15px;
+}
+
+navbar{
+  border-bottom: 1.5px solid black;
+
 }

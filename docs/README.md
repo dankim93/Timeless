@@ -1,9 +1,10 @@
 # Timeless
-<!-- [Heroku link][heroku] -->
+[Heroku link][heroku]
+
 [Trello link][trello]
 
-<!-- [heroku]: -->
 [trello]: https://trello.com/b/7cLOVHcr/timeless
+[heroku]: http://timeless-app.herokuapp.com/#/
 
 ## Minimum Viable Product
 
@@ -36,23 +37,23 @@ Timeless is a web application inspired by Flickr build using Ruby on Rails on th
 
 **Todo: ** Functioning rails project with front-end Authentication.
 
-### Phase 2: Photo Model, API, and Components (2 days)
+### Phase 2: Photo Model, API, and Components (2 days - W1D2)
 
 **Todo: ** Photos can be created, read and destroyed through the API.
 
-### Phase 3: Comments (2 days)
+### Phase 3: Comments (2 days - W1D4)
 
 **Todo: ** Comments can be created, read and destroyed through the API.
 
-### Phase 4: Tags (1 day)
+### Phase 4: Tags (1 day - W2D1)
 
 **Todo: ** Photos can be tagged with multiple tags, and tags are searchable.
 
-### Phase 5: Albums (1 day)
+### Phase 5: Albums (1 day - W2D2)
 
 **Todo: ** Albums may have photos and be created, read, and destroyed through the API.
 
-### Phase 6: infinite scroll (1 day)
+### Phase 6: infinite scroll (1 day - W2D3)
 
 **Todo: ** Add infinite scroll to view the photos.
 

@@ -21,6 +21,15 @@ form.login-form-box > h2{
     margin: -30px -30px 30px -30px;
 }
 
+.memo > a,p {
+  margin-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+}
+
+.memo > a {
+  color: #00BFFF;
+}
 .login-form-box {
     font-family: 'Open Sans Condensed', arial, sans;
     width: 500px;
@@ -33,18 +42,16 @@ form.login-form-box > h2{
 .login-form-box input[type="text"],
 .login-form-box input[type="password"]{
   box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    outline: none;
-    display: block;
-    width: 100%;
-    padding: 7px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    background: transparent;
-    margin-bottom: 10px;
-    font: 16px Arial, Helvetica, sans-serif;
-    height: 45px;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
 }
 
 .login-form-box input[type="button"],
@@ -60,6 +67,8 @@ form.login-form-box > h2{
     padding: 8px 18px;
     text-decoration: none;
     text-transform: uppercase;
+    opacity: 1;
+	  transition: .3s ease-in-out;
 }
 
 .login-form-box input[type="button"]:hover,

@@ -3,7 +3,7 @@ import NavbarContainer from './navbar/navbar_container';
 import { Link } from 'react-router';
 
 const App = ({ children }) => (
-  <div>
+  <div className='app'>
     <NavbarContainer />
     { children }
   </div>

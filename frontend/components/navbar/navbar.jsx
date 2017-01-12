@@ -10,9 +10,11 @@ const sessionLinks = (login) => (
       <h1 className='logo'>Timeless</h1>
     </Link>
     <nav className='login-signup'>
-      <Link to="/login" >Log In</Link>
-      <Link to="/signup">Sign Up</Link>
-      <button onClick={() => login(guest)}>Guest</button>
+      <ul>
+        <li><Link to="/login" >Log In</Link></li>
+        <li><Link to="/signup">Sign Up</Link></li>
+        <li><button onClick={() => login(guest)}>Guest</button></li>
+      </ul>
     </nav>
   </navbar>
 );

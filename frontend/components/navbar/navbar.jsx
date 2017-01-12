@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router';
 // import { login } from '../../actions/session_actions';
 
-const guest = { user: {username: 'guest', password: 'password'}};
+const guest = { user: {username: 'username', password: 'password'}};
 
 const sessionLinks = (login) => (
-  <navbar className='out'>
+  <div className='navbar'>
     <Link to="/" className="logo-link">
       <h1 className='logo'>Timeless</h1>
     </Link>
@@ -16,7 +16,7 @@ const sessionLinks = (login) => (
         <li><button onClick={() => login(guest)}>Guest</button></li>
       </ul>
     </nav>
-  </navbar>
+  </div>
 );
 
 // const loginGuest = (login) => {
@@ -26,7 +26,7 @@ const sessionLinks = (login) => (
 // };
 
 const personalStatus = (currentUser, logout) => (
-  <navbar className='in'>
+  <div className='navbar'>
     <Link to="/" className="logo-link">
       <h1 className='logo'>Timeless</h1>
     </Link>
@@ -34,7 +34,7 @@ const personalStatus = (currentUser, logout) => (
       <h2 >Welcome, {currentUser.username}</h2>
       <button onClick={logout}>Log Out</button>
   	</nav>
-  </navbar>
+  </div>
 );
 
 const Navbar = ({ currentUser, logout, login }) => (

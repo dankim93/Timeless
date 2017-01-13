@@ -12,9 +12,8 @@ export default class Splash extends React.Component {
 
   render(){
     return(
-      <div className='splash'>
-
-      </div>
+      <div className='splash'></div>
+      
     );
   }
 }

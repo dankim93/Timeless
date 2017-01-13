@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PhotoIndexContainer from '../../photos/photo_index_container';
 
 export default class Splash extends React.Component {
 
@@ -8,6 +8,7 @@ export default class Splash extends React.Component {
     return(
       <div>
         <SplashImage />
+        <PhotoIndexContainer />
       </div>
     );
   }

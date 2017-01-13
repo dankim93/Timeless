@@ -10,6 +10,17 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def index
+    @users = User.all
+  end
+
+  def show
+    @user = User.find(params[:id])
+    if @user
+      render "api/users/show"
+    end
+  end
+
   private
 
   def user_params

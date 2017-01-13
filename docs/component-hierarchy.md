@@ -11,14 +11,14 @@
 **PhotoIndex**
 
 **PhotoIndexContainer**
-  - PhotoIndexItem
-    + username
-    + title
-    + description
-    + time
+  - PhotoIndex
 
 **PhotoIndex**
   - PhotoIndexItem
+      + username
+      + title
+      + description
+      + time
 
 **UserContainer**
   - NavBarContainer

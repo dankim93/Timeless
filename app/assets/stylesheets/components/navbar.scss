@@ -11,7 +11,7 @@ h1.logo {
   font-family: 'Patrick Hand SC', cursive;
   font-size: 50px;
   margin-left: 30px;
-  margin-top: 10px;
+  // margin-top: 5px;
 }
 
 div > nav.login-signup {
@@ -23,8 +23,21 @@ div > nav.login-signup {
 }
 
 div > nav > h2 {
-  margin-top: 28px;
+  margin-top: 25px;
   margin-right: 30px;
+}
+
+.login-signup-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login-signup-left > a.left-link {
+  margin-left: 40px;
+  margin-top: 25px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
 }
 
 .login-signup > ul {
@@ -34,9 +47,22 @@ div > nav > h2 {
 }
 
 .login-signup > ul > li {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 30px;
 
+}
+
+.login-signup > ul > li > a, button {
+  padding: 15px;
+  border-radius: 1px;
+}
+
+.login-signup > ul > li > button {
+  margin-top: -15px;
+}
+
+.login-signup > ul > li > a:hover, button:hover {
+  background: rgba(0,0,0,0.1);
 }
 
 .login-signup > ul > li:hover {

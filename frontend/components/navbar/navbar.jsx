@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 // import { login } from '../../actions/session_actions';
 
-const guest = { user: {username: 'username', password: 'password'}};
+const guest = { user: {username: 'guest', password: 'password'}};
 
 const sessionLinks = (login) => (
   <div className='navbar'>
@@ -27,9 +27,14 @@ const sessionLinks = (login) => (
 
 const personalStatus = (currentUser, logout) => (
   <div className='navbar'>
-    <Link to="/" className="logo-link">
-      <h1 className='logo'>Timeless</h1>
-    </Link>
+    <nav className='login-signup-left'>
+      <Link to="/" className="logo-link">
+        <h1 className='logo'>Timeless</h1>
+      </Link>
+      <Link className='left-link'>You</Link>
+      <Link className='left-link'>Explore</Link>
+    </nav>
+
   	<nav className='login-signup'>
       <h2 >Welcome, {currentUser.username}</h2>
       <button onClick={logout}>Log Out</button>

@@ -1,15 +1,18 @@
 import React from 'react';
-import PhotoIndexContainer from '../../photos/photo_index_container';
+import PhotoIndexContainer from '../photos/photo_index_container';
 
-export default class Splash extends React.Component {
-
+class Splash extends React.Component {
 
   render(){
     return(
       <div>
-        <SplashImage />
+        <div className='splash'>
+        </div>
         <PhotoIndexContainer />
       </div>
+
     );
   }
 }
+
+export default Splash;

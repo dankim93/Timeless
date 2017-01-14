@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 //react components
 import App from './app';
-import Splash from '../splash/splash';
+import Splash from './splash/splash';
 import SessionFormContainer from './session_form/session_form_container';
 
 

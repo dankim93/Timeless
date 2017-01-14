@@ -20,7 +20,7 @@ export const removePhoto = photo => ({
   photo
 });
 
-export const fetchPhotos = (filters) => dispatch => (
+export const fetchPhotos = () => dispatch => (
   APIUtil.fetchPhotos().then(photos => dispatch(receivePhotos(photos)))
 );
 

@@ -29,6 +29,19 @@
   padding-left: 10px;
 }
 
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.top-pic {
+  display: flex;
+  flex-direction: row;
+}
+
 .photo-grid > li {
   // padding-bottom: 30px;
   margin: 0;

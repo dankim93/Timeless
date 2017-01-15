@@ -80,6 +80,18 @@ navbar > nav > a {
   // margin-bottom: 15px;
 }
 
+a.left-link {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-radius: 1px;
+}
+
+a.left-link:hover {
+  background: rgba(0,0,0,0.1);
+}
+
 div.navbar {
   border-bottom: 1.5px solid black;
 }

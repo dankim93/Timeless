@@ -34,9 +34,11 @@ const Root = ({ store }) => {
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
         </Route>
+
       </Router>
     </Provider>
   );
 };
+// <Route path="/user/:userId" component={UserContainer} onEnter={_ensureLoggedIn} />
 
 export default Root;

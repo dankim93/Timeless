@@ -3,9 +3,16 @@ import { Link } from 'react-router';
 
 const PhotoIndexItem = ({ photo }) => (
   <div className='photo-grid'>
-    <h4>User Id: {photo.user_id}</h4>
-    <img src={photo.image_url} />
-    <h5>{photo.title} - {photo.description}</h5>
+    <div className='top-pic'>
+      <img className='profile-pic' src={photo.profile_url} />
+      <h4 className='photo-username'>{photo.username}</h4>
+    </div>
+    <div className='bot-pic'>
+      <img src={photo.image_url} />
+      <li className='photo-title'>
+        <h5>{photo.title} - {photo.description}</h5>
+      </li>
+    </div>
   </div>
 );
 

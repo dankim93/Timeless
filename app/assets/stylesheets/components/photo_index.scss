@@ -20,16 +20,28 @@
   padding-top: 30px;
   margin: 0;
   border-radius: 3px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 17px;
+  // font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  padding-left: 10px;
 }
 
-.photo-grid > h5 {
-  background-color: white;
-  padding-bottom: 30px;
+.photo-username, .photo-title {
+  padding-left: 10px;
+}
+
+.photo-grid > li {
+  // padding-bottom: 30px;
   margin: 0;
-  border-radius: 3px;
+  background-color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
+}
 
+.photo-grid > div {
+  font-family: 'Quicksand', sans-serif;
+  // height: 45px;
+  border-style: solid;
+  border-width: .1px;
+  border-color: lightgray;
+  background-color: white;
 }

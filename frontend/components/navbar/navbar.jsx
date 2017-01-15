@@ -26,13 +26,14 @@ const sessionLinks = (login) => (
 // };
 
 const personalStatus = (currentUser, logout) => (
+
   <div className='navbar'>
     <nav className='login-signup-left'>
       <Link to="/" className="logo-link">
         <h1 className='logo'>Timeless</h1>
       </Link>
       <Link className='left-link'>You</Link>
-      <Link className='left-link'>Explore</Link>
+      <Link to='/' className='left-link'>Explore</Link>
     </nav>
 
   	<nav className='login-signup'>

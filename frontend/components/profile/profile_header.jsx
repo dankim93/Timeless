@@ -15,7 +15,7 @@ class ProfileHeader extends React.Component{
           <h2 className='profile-name'>{this.props.currentUser.username}</h2>
         </div>
         <div className='tab-bar'>
-          <Link>PHOTOS</Link>
+          <Link to={`/users/${this.props.currentUser.id}/photos`}>PHOTOS</Link>
           <Link to={`/users/${this.props.currentUser.id}`}>PHOTOSTREAM</Link>
           <Link>ALBUMS</Link>
         </div>

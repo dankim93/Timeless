@@ -7,11 +7,21 @@ import PhotosContainer from './photos_container';
 class Profile extends React.Component{
 
   render() {
-    debugger
+    let path = this.props.location.pathname;
+    let chosenContainer = <PhotoStreamContainer/>;
+    // debugger;
+    if (path.substr(path.length - 6) === 'photos') {
+      chosenContainer = <PhotosContainer/>;
+    } else if (path.substr(path.length - 6) === 'albums') {
+      chosenContainer = <AlbumsContainer/>;
+    } else {
+      chosenContainer = <PhotoStreamContainer/>;
+    }
+
     return(
       <section>
         <ProfileHeaderContainer />
-        <PhotoStreamContainer />
+        {chosenContainer}
       </section>
 
 

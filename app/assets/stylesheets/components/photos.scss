@@ -1,0 +1,11 @@
+.photos-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.small-image {
+  width: 200px;
+  margin: 20px;
+}

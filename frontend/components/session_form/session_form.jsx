@@ -12,6 +12,13 @@ class SessionForm extends React.Component {
 		this.redirectIfLoggedIn();
 	}
 
+	componentWillReceiveProps(newProps) {
+		if (this.props.location.pathname !== newProps.location.pathname) {
+			this.setState({username: "", password: ""},
+			() => this.props.clearErrors());
+		}
+	}
+
 	redirectIfLoggedIn() {
 		if (this.props.loggedIn) {
 			this.props.router.push("/");
@@ -42,7 +49,7 @@ class SessionForm extends React.Component {
 		return(
 			<ul>
 				{this.props.errors.map((error, i) => (
-					<li key={`error-${i}`}>
+					<li className='form-error' key={`error-${i}`}>
 						{error}
 					</li>
 				))}

@@ -6,7 +6,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import Splash from './splash/splash';
 import SessionFormContainer from './session_form/session_form_container';
-
+import UserContainer from './profile/profile_container';
 
 
 
@@ -33,12 +33,13 @@ const Root = ({ store }) => {
           <IndexRoute component={Splash} />
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
+          <Route path='/users/:userId' component={UserContainer} onEnter={_ensureLoggedIn} />
         </Route>
 
       </Router>
     </Provider>
   );
 };
-// <Route path="/user/:userId" component={UserContainer} onEnter={_ensureLoggedIn} />
+// <Route path="/user/:userId/albums" component={UserContainer} onEnter={_ensureLoggedIn} />
 
 export default Root;

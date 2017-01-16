@@ -1,0 +1,43 @@
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 1.5px solid white;
+}
+
+.header-info {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1.5px solid lightgray;
+}
+
+.profile-name {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.tab-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // border-bottom: 1px solid lightgray;
+}
+
+.tab-bar > a {
+  font-family: 'Patrick Hand SC', cursive;
+  font-weight: 1500;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.tab-bar > a:hover {
+  color: deepskyblue;
+  border-bottom: 2px solid deepskyblue;
+  cursor: pointer;
+}

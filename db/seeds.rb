@@ -5,11 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.create(username: 'guest', password: 'password', profile_url: "http://res.cloudinary.com/dyjarpgbt/image/upload/v1484533190/pexels-photo-190956_n4t191.jpg")
+
+User.create(username: 'guest', password: 'password', profile_url: "http://res.cloudinary.com/dyjarpgbt/image/upload/c_crop,r_0/v1484533001/pexels-photo-63937_utf6qa.jpg")
 User.create(username: 'dankim', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/girl-forest-nature-stroll-160627_ewnzti.jpg')
 User.create(username: 'Linn Marlen', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/pexels-photo-24648_fruerp.jpg')
 User.create(username: 'Elizabeth', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/pexels-photo-93017_nyf6o0.jpg')
-User.create(username: 'Kavan Cardoza', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_crop,r_0/v1484533001/pexels-photo-63937_utf6qa.jpg')
+User.create(username: 'Kavan Cardoza', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484533190/pexels-photo-190956_n4t191.jpg')
 User.create(username: 'Phil', password: 'password', profile_url: "http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/pexels-photo-94645_vvyx9q.jpg")
 
 Photo.create(image_url: 'http://www.visitberkeley.com/images/header-rotation/OrangeSky_full_web.jpg', title: 'Berkeley', description: 'San Francisco view from Berkeley', user_id: 1, thumb_url: 'http://www.visitberkeley.com/images/header-rotation/OrangeSky_full_web.jpg')

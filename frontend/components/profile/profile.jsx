@@ -1,5 +1,5 @@
 import React from 'react';
-// import PhotoIndexItem from './photo_index_item';
+import ProfileHeaderContainer from './profile_header_container';
 
 class Profile extends React.Component{
   componentDidMount() {
@@ -7,8 +7,11 @@ class Profile extends React.Component{
   }
   render() {
     return(
-        <img src={'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484528887/profileheader.jpg'} />
-        
+      <section>
+        <ProfileHeaderContainer />
+      </section>
+
+
     );
   }
 }

@@ -8,6 +8,7 @@ class Splash extends React.Component {
       <div>
         <div className='splash'>
         </div>
+        <h2 className='phrase'>Home of millions of pixels</h2>
         <PhotoIndexContainer />
       </div>
 

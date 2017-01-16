@@ -23,7 +23,7 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 title       | string    | not null
-description | string    |
+description | string    | not null
 
 ## Comments
 column name | data type | details

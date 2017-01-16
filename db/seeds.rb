@@ -19,3 +19,6 @@ Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v14843
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484332438/pexels-photo-200303_jkgqpy.jpg', title: 'Dual screen', description: 'Working with multi-screen', user_id: 5, thumb_url: 'http://www.visitberkeley.com/images/header-rotation/OrangeSky_full_web.jpg')
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484332445/pexels-photo-213347_irypfm.jpg', title: 'Tunnel', description: 'Going through a tunnel during Christmas break', user_id: 6, thumb_url: 'http://www.visitberkeley.com/images/header-rotation/OrangeSky_full_web.jpg')
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484332433/pexels-photo-48727_fdbn50.jpg', title: 'Work setup', description: 'Time to study', user_id: 2, thumb_url: 'http://www.visitberkeley.com/images/header-rotation/OrangeSky_full_web.jpg')
+
+Album.create(title: 'Views', description: 'Beautiful pictures of views', user_id: 3)
+Album.create(title: 'Daily life', description: 'Daily stuff', user_id: 1)

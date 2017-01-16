@@ -1,7 +1,11 @@
-div.splash {
+.splash {
   background: image-url("sf.jpg");
   width: 100vw;
   height: 80vh;
   background-size: cover;
   background-position: center;
+}
+
+.phrase {
+  align-content: center;
 }

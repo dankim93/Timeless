@@ -1,14 +1,17 @@
 import React from 'react';
 import ProfileHeaderContainer from './profile_header_container';
+import PhotoStreamContainer from './photo_stream_container';
+import PhotosContainer from './photos_container';
+// import AlbumsContainer from './albums_container';
 
 class Profile extends React.Component{
-  componentDidMount() {
-    this.props.fetchPhotos();
-  }
+
   render() {
+    debugger
     return(
       <section>
         <ProfileHeaderContainer />
+        <PhotoStreamContainer />
       </section>
 
 

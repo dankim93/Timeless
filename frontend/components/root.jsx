@@ -33,13 +33,17 @@ const Root = ({ store }) => {
           <IndexRoute component={Splash} />
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
-          <Route path='/users/:userId' component={UserContainer} onEnter={_ensureLoggedIn} />
+          <Route path='/users/:userId' component={UserContainer} onEnter={_ensureLoggedIn} >
+            <IndexRoute component={UserContainer} />
+
+          </Route>
         </Route>
 
       </Router>
     </Provider>
   );
 };
-// <Route path="/user/:userId/albums" component={UserContainer} onEnter={_ensureLoggedIn} />
+// <Route path="photos" component={UserContainer} onEnter={_ensureLoggedIn} />
+// <Route path="albums" component={UserContainer} onEnter={_ensureLoggedIn} />
 
 export default Root;

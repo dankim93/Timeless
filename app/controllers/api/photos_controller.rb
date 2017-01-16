@@ -1,6 +1,13 @@
 class Api::PhotosController < ApplicationController
   def index
-    @photos = Photo.all.includes(:user)
+    # @photos = Photo.all.includes(:user)
+    if (params[:data])
+      photos = Photo.where(user_id: current_user.id)
+      @photos = photos.includes(:user)
+    else
+      @photos = Photo.all.includes(:user)
+    end
+    render :index
   end
 
   def show
@@ -9,7 +16,7 @@ class Api::PhotosController < ApplicationController
 
   def create
     @photo = Photo.new(photo_params)
-    @photo.author_id = current_user.id
+    @photo.user_id = current_user.id
     if @photo.valid?
       @photo.save!
       if params[:album_id]

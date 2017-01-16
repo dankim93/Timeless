@@ -3,7 +3,7 @@ import PhotosItem from './photos_item';
 
 class Photos extends React.Component{
   componentDidMount() {
-    this.props.fetchPhotos();
+    this.props.fetchPhotos({id: this.props.currentUser.id});
   }
   render() {
     return(

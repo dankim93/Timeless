@@ -1,22 +1,29 @@
-export const fetchComments = (data) => (
+export const fetchPhotos = (data) => (
   $.ajax({
     method: 'GET',
-    url: `/api/comments`,
+    url: `/api/photos`,
     data: { data }
   })
 );
 
-export const createComment = (comment) => (
+export const fetchPhoto = id => (
   $.ajax({
-    url: '/api/comments',
-    type: "POST",
-    data: { comment }
+    method: 'GET',
+    url: `/api/photos/${id}`
   })
 );
 
-export const deleteComment = (id) => (
+export const createPhoto = (photo) => (
+  $.ajax({
+    url: '/api/photos',
+    type: "POST",
+    data: { photo }
+  })
+);
+
+export const deletePhoto = (id) => (
   $.ajax({
     type: "DELETE",
-    url: `/api/comments/${id}`
+    url: `/api/photos/${id}`
   })
 );

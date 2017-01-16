@@ -1,4 +1,7 @@
 .splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: image-url("sf.jpg");
   width: 100vw;
   height: 80vh;
@@ -8,4 +11,8 @@
 
 .phrase {
   align-content: center;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
 }

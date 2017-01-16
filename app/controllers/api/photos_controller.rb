@@ -1,6 +1,7 @@
 class Api::PhotosController < ApplicationController
   def index
     # @photos = Photo.all.includes(:user)
+    # debugger
     if (params[:data])
       photos = Photo.where(user_id: current_user.id)
       @photos = photos.includes(:user)

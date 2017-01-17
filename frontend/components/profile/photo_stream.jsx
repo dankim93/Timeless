@@ -3,7 +3,7 @@ import PhotoStreamItem from './photo_stream_item';
 
 class PhotoStream extends React.Component{
   componentDidMount() {
-    this.props.fetchPhotos({id: this.props.currentUser.id});
+    this.props.fetchPhotos({id: this.props.userId});
   }
 
   render() {

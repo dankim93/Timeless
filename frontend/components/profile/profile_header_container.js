@@ -3,6 +3,7 @@ import ProfileHeader from './profile_header';
 
 const mapStateToProps = ({ session }) => ({
   currentUser: session.currentUser
+
 });
 
 export default connect(

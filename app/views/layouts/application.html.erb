@@ -2,23 +2,24 @@
 <html>
 <head>
   <title>Timeless</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <%= cloudinary_js_config %>
 
-  <script type='text/javascript' src="https://widget.cloudinary.com/global/all.js" charset="utf-8"></script>
+
+  <script type='text/javascript' src="//widget.cloudinary.com/global/all.js" ></script>
   <script type="text/javascript">
     window.cloudinary_options = {
-      cloud_name: '<%= ENV['cloud_name'] %>',
-      upload_preset: '<%= ENV['upload_preset'] %>',
-
+      cloud_name: '<%= ENV['CLOUD_NAME'] %>',
+      upload_preset: '<%= ENV['UPLOAD_PRESET'] %>',
       theme: "minimal"
-    }
+    };
   </script>
 </head>
 <body>

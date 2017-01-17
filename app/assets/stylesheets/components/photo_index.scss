@@ -15,7 +15,7 @@
   margin-top: 30px;
 }
 
-.photo-grid > h4 {
+.photo-grid > a {
   background-color: white;
   padding-top: 30px;
   margin: 0;
@@ -29,12 +29,17 @@
   padding-left: 10px;
 }
 
+.photo-username{
+  margin-top: 15px;
+}
+
 .profile-pic {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 15px;
+  margin-bottom: 5px;
 }
 
 .top-pic {

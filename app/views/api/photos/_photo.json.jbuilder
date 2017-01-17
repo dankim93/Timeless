@@ -4,3 +4,4 @@ json.extract!(
 )
 json.set!(:username, photo.user.username)
 json.set!(:profile_url, photo.user.profile_url)
+json.set!(:time, photo.user.created_at)

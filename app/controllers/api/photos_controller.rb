@@ -3,7 +3,7 @@ class Api::PhotosController < ApplicationController
     # @photos = Photo.all.includes(:user)
     # debugger
     if (params[:data])
-      photos = Photo.where(user_id: current_user.id)
+      photos = Photo.where(id: current_user.id)
       @photos = photos.includes(:user)
     else
       @photos = Photo.all.includes(:user)

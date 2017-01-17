@@ -5,7 +5,7 @@ const PhotoStreamItem = ({ photo }) => (
   <div className='photo-grid'>
     <div className='top-pic'>
       <img className='profile-pic' src={photo.profile_url} />
-      <h4 className='photo-username'>{photo.username}</h4>
+        <Link to={`/users/${photo.user_id}`} className='photo-username'>{photo.username}</Link>
     </div>
     <div className='bot-pic'>
       <img src={photo.image_url} />

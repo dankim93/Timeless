@@ -5,6 +5,7 @@ class PhotoStream extends React.Component{
   componentDidMount() {
     this.props.fetchPhotos({id: this.props.currentUser.id});
   }
+
   render() {
     return(
       <ul className='photo-list'>

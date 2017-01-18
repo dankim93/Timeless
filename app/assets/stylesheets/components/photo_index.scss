@@ -69,8 +69,10 @@ img.to-modal:hover, img.photos-image:hover{
 }
 
 .modal-top img {
-  width: 80%;
+  width: 100%;
   height: auto;
+  border-bottom: 1.5px solid lightgray;
+
 }
 
 .modal-top {

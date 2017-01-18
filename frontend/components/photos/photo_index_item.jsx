@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
 import CommentContainer from './comment/comment_container';
+import ModalStyle from './modal_style';
+
 
 
 class PhotoIndexItem extends React.Component {
@@ -36,7 +38,8 @@ class PhotoIndexItem extends React.Component {
           <Modal
             contentLabel=''
             isOpen={this.state.modalOpen}
-            onRequestClose={this.closeModal}>
+            onRequestClose={this.closeModal}
+            style={ModalStyle}>
 
             <div className='modal-top'>
               <p><img src={this.props.photo.image_url} /></p>
@@ -58,21 +61,6 @@ class PhotoIndexItem extends React.Component {
     );
   }
 }
-// }
-//
-// const PhotoIndexItem = ({ photo }) => (
-//   <div className='photo-grid'>
-//     <div className='top-pic'>
-//       <img className='profile-pic' src={photo.profile_url} />
-//       <Link to={`/users/${photo.user_id}`} className='photo-username'>{photo.username}</Link>
-//     </div>
-//     <div className='bot-pic'>
-//       <img src={photo.image_url} />
-//       <li className='photo-title'>
-//         <h5>{photo.title} - {photo.description}</h5>
-//       </li>
-//     </div>
-//   </div>
-// );
+
 
 export default PhotoIndexItem;

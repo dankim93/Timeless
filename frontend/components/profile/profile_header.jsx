@@ -4,6 +4,8 @@ import Dropzone from 'react-dropzone';
 import PhotoImageForm from '../photos/photo_image_form';
 import PhotoUploadForm from '../photos/photo_upload_form';
 import Modal from 'react-modal';
+import ModalStyle from './modal_style';
+
 // import PhotoIndexContainer from '../photos/photo_index_container';
 
 class ProfileHeader extends React.Component{
@@ -33,28 +35,6 @@ class ProfileHeader extends React.Component{
       this.setState({ modalOpen: false });
     }
 
-
-
-
-  // handleUpload(e) {
-  //   e.preventDefault();
-  //   cloudinary.openUploadWidget(window.cloudinary_options, (error, images) => {
-  //     if(!error){
-  //       const img = images[0].url;
-  //       this.setState({image_url: img});
-  //     }
-  //   });
-  // }
-  //
-  // update(prop) {
-  //   return e => this.setState({[prop]: e.target.value});
-  // }
-  //
-  // handleSubmit(e) {
-  //   e.preventDefault();
-  //   this.props.createPhoto(this.state);
-  // }
-
   render() {
     return(
       <section>
@@ -73,9 +53,14 @@ class ProfileHeader extends React.Component{
           <Modal
             contentLabel=''
             isOpen={this.state.modalOpen}
-            onRequestClose={this.closeModal}>
-            <PhotoUploadForm currentUser={this.props.currentUser}
-                             createPhoto={this.props.createPhoto} />
+            onRequestClose={this.closeModal}
+            style={ModalStyle}>
+
+            <div className='upload-modal'>
+              <PhotoUploadForm currentUser={this.props.currentUser}
+                createPhoto={this.props.createPhoto} />
+              <Link onClick={this.closeModal}>close</Link>
+            </div>
           </Modal>
         </div>
       </section>

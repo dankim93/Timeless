@@ -33,11 +33,14 @@ class PhotoUploadForm extends React.Component{
   render() {
     return(
       <form className='upload-form' onSubmit={this.handleSubmit.bind(this)}>
+
         <input
+          className='form-div'
           type='text'
           value={this.state.title}
           placeholder="title"
           onChange={this.update('title')} />
+
         <input
           type="text"
           value={this.state.description}

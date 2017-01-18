@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
+import ModalStyle from '../photos/modal_style';
+import CommentContainer from '../photos/comment/comment_container';
+
 
 class PhotosItem extends React.Component {
   constructor(props) {
@@ -26,13 +29,17 @@ class PhotosItem extends React.Component {
         <Modal
           contentLabel=''
           isOpen={this.state.modalOpen}
-          onRequestClose={this.closeModal}>
+          onRequestClose={this.closeModal}
+          style={ModalStyle}>
 
           <div className='modal-top'>
-            <img src={this.props.photo.image_url} />
+            <p><img src={this.props.photo.image_url} /></p>
             <p><button onClick={this.closeModal}>close</button></p>
           </div>
-
+          <div>
+            <CommentContainer photoId={this.props.photo.id}/>
+          </div>
+          
         </Modal>
 
     </div>

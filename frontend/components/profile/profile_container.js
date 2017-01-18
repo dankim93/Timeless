@@ -7,7 +7,7 @@ import { fetchUser } from '../../actions/user_actions';
    currentUser: state.session.currentUser,
    photos: Object.keys(state.photos).map(id => state.photos[id]),
    userId: ownProps.params.userId,
-   user: state.users
+   user: state.user
  });
 
  const mapDispatchToProps = dispatch => ({

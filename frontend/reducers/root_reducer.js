@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
   photos: PhotosReducer,
   albums: AlbumsReducer,
   comments: CommentsReducer,
-  users: UsersReducer
+  user: UsersReducer
 });
 
 export default rootReducer;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import PhotoImageForm from '../photos/photo_image_form';
 // import PhotoIndexContainer from '../photos/photo_index_container';
 
 class ProfileHeader extends React.Component{
@@ -18,6 +19,7 @@ class ProfileHeader extends React.Component{
           <Link to={`/users/${this.props.user.id}/photos`}>PHOTOS</Link>
           <Link to={`/users/${this.props.user.id}`}>PHOTOSTREAM</Link>
           <Link>ALBUMS</Link>
+          <PhotoImageForm />
         </div>
       </section>
 

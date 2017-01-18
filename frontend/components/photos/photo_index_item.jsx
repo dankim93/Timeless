@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
-// import CommentContainer from './comment/comment_container';
+import CommentContainer from './comment/comment_container';
 
 
 class PhotoIndexItem extends React.Component {
@@ -21,6 +21,7 @@ class PhotoIndexItem extends React.Component {
   }
 
   render() {
+
     return(
       <div className='photo-grid'>
         <div className='top-pic'>
@@ -39,7 +40,9 @@ class PhotoIndexItem extends React.Component {
               <p><img src={this.props.photo.image_url} /></p>
               <p><button onClick={this.closeModal}>close</button></p>
             </div>
-
+            <div>
+              <CommentContainer photoId={this.props.photo.id}/>
+            </div>
 
           </Modal>
 

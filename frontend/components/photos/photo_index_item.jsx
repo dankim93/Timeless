@@ -20,10 +20,6 @@ class PhotoIndexItem extends React.Component {
     this.setState({ modalOpen: false });
   }
 
-  // _handleClick() {
-  //   this.setState({ modalOpen: false});
-  // }
-
   render() {
     return(
       <div className='photo-grid'>
@@ -32,19 +28,20 @@ class PhotoIndexItem extends React.Component {
           <Link to={`/users/${this.props.photo.user_id}`} className='photo-username'>{this.props.photo.username}</Link>
         </div>
         <div className='bot-pic'>
-          <img onClick={this.openModal} src={this.props.photo.image_url} />
+          <img className='to-modal' onClick={this.openModal} src={this.props.photo.image_url} />
 
           <Modal
             contentLabel=''
             isOpen={this.state.modalOpen}
             onRequestClose={this.closeModal}>
 
-            <button onClick={this.closeModal}>close</button>
-            <img src={this.props.photo.image_url} />
+            <div className='modal-top'>
+              <p><img src={this.props.photo.image_url} /></p>
+              <p><button onClick={this.closeModal}>close</button></p>
+            </div>
 
 
           </Modal>
-
 
 
           <li className='photo-title'>

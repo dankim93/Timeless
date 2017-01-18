@@ -63,3 +63,18 @@
   border-color: lightgray;
   background-color: white;
 }
+
+img.to-modal:hover, img.photos-image:hover{
+  cursor: pointer;
+}
+
+.modal-top img {
+  width: 80%;
+  height: auto;
+}
+
+.modal-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

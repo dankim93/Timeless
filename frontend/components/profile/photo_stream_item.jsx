@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Modal from 'react-modal';
 
 const PhotoStreamItem = ({ photo }) => (
   <div className='photo-grid'>
@@ -15,5 +16,8 @@ const PhotoStreamItem = ({ photo }) => (
     </div>
   </div>
 );
+
+
+
 
 export default PhotoStreamItem;

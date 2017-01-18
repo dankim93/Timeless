@@ -1,6 +1,13 @@
 class Api::CommentsController < ApplicationController
   def index
-    @comments = Comment.all
+    # @comments = Comment.all
+    if (params[:data])
+      comments = Comment.where(comment_id: params[:data][:id])
+      @comments = comments
+    else
+      @comments = Comment.all
+    end
+    render :index
   end
 
   def create

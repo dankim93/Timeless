@@ -1,0 +1,23 @@
+.comment-form {
+  font-family: 'Quicksand', sans-serif;
+  // border: 1.5px solid lightgray;
+
+}
+
+.comment-form > h3 {
+  font-weight: bolder;
+}
+
+.comment-form input {
+  border: 1.5px solid lightgray;
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+
+.comment-form button {
+  background: rgb(66, 184, 221);
+  font-size: 14px;
+  padding: 7px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

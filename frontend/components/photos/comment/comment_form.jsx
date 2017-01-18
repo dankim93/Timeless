@@ -43,7 +43,7 @@ class CommentForm extends React.Component {
       ));
 
       return(
-        <section>
+        <section className='comment-form'>
           <h3>Comments</h3>
           <ul>
             { displayComments }
@@ -56,7 +56,7 @@ class CommentForm extends React.Component {
               placeholder='Add a comment...'
               autoComplete='off'
               onChange={this.update('body')}/>
-            <button>Comment</button>
+            <button>Add</button>
           </form>
         </section>
       );

@@ -1,0 +1,28 @@
+form.upload-form {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+form.upload-form > button {
+  background: rgb(66, 184, 221);
+  border: 1.5px solid lightgray;
+  margin-right: 5px;
+  font-size: 15px;
+  padding: 3px;
+  align-items: center;
+  width: 105px;
+}
+
+form.upload-form > input {
+  height: 30px;
+  border: 1.5px solid lightgray;
+
+}
+
+button.upload-button {
+  font-family: 'Quicksand', sans-serif;
+  background: rgb(66, 184, 221);
+
+}

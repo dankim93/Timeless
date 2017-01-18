@@ -18,14 +18,15 @@ class Api::PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
     @photo.user_id = current_user.id
-    if @photo.valid?
-      @photo.save!
-      if params[:album_id]
-        Album.find(params[:album_id]).photos << @photo
-      end
+    if @photo.save!
+      # if params[:album_id]
+      #   Album.find(params[:album_id]).photos << @photo
+      # end
       render :show
     else
-      render json: ['Invalid parameters'], status: 422
+      p @photo.errors
+      render json: @photo.errors.full_messages, status: 422
+      # render json: ['Invalid parameters'], status: 422
     end
   end
 
@@ -39,10 +40,9 @@ class Api::PhotosController < ApplicationController
   private
   def photo_params
     params.require(:photo).permit(
-      :img_url,
+      :image_url,
       :title,
       :description,
-      :thumb_url,
       :user_id,
       :album_id
     )

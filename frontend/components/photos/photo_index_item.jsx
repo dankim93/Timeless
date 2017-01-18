@@ -13,7 +13,9 @@ class PhotoIndexItem extends React.Component {
   }
 
   openModal() {
-    this.setState({ modalOpen: true });
+    if (this.props.user) {
+      this.setState({ modalOpen: true });
+    }
   }
 
   closeModal() {

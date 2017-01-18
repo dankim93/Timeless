@@ -10,7 +10,7 @@ import {
 
 const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
-  comments: values(state.comments),
+  comments: Object.keys(state.comments).map(id => state.comments[id]),
   user: state.user
 });
 

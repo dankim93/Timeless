@@ -25,9 +25,8 @@ class CommentForm extends React.Component {
   update(prop) {
     return e => this.setState({[prop]: e.target.value});
   }
-
   render() {
-    if(this.props.comments[0]) {
+    console.log(this.props.comments);
       const filterComments = (id) => {
         let result = [];
         this.props.comments.map(comment => {
@@ -60,12 +59,8 @@ class CommentForm extends React.Component {
           </form>
         </section>
       );
-    } else {
-      return (
-        <div></div>
-      );
     }
   }
-}
+
 
 export default CommentForm;

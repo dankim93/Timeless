@@ -1,5 +1,5 @@
 class Photo < ActiveRecord::Base
-  validates :image_url, :user, :thumb_url, presence: true
+  validates :image_url, :user, presence: true
 
   belongs_to(:user,
             foreign_key: :user_id,

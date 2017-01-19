@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  
+  window.store = store;
+
   const root = document.getElementById('root');
   Modal.setAppElement(document.body);
   ReactDOM.render(<Root store={store}/>, root);
 
-  window.store = store;
 });

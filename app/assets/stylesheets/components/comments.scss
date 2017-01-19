@@ -1,11 +1,13 @@
 .comment-form {
   font-family: 'Quicksand', sans-serif;
-  // border: 1.5px solid lightgray;
+  border: 1.5px solid lightgray;
 
 }
 
 .comment-form > h3 {
   font-weight: bolder;
+  border-bottom: 1.5px solid black;
+  align-items: center;
 }
 
 .comment-form input {

@@ -1,5 +1,5 @@
 class Album < ActiveRecord::Base
-  validates :title, :description, presence: true
+  validates :title, presence: true
 
   has_many :photos
   belongs_to(:user,

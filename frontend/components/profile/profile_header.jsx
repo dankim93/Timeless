@@ -9,15 +9,7 @@ import ModalStyle from './modal_style';
 // import PhotoIndexContainer from '../photos/photo_index_container';
 
 class ProfileHeader extends React.Component{
-  // constructor(props) {
-  //   super(props);
-    // this.state = {
-    //   title: '',
-    //   description: '',
-    //   image_url: '',
-    //   user_id: this.props.currentUser.id
-    // };
-    // }
+
     constructor(props) {
       super(props);
       this.state = { modalOpen: false };
@@ -48,7 +40,7 @@ class ProfileHeader extends React.Component{
         <div className='tab-bar'>
           <Link to={`/users/${this.props.user.id}/photos`}>PHOTOS</Link>
           <Link to={`/users/${this.props.user.id}`}>PHOTOSTREAM</Link>
-          <Link>ALBUMS</Link>
+          <Link to={`/users/${this.props.user.id}/albums`}>ALBUMS</Link>
           <button className="upload-button" onClick={this.openModal}>Upload</button>
           <Modal
             contentLabel=''

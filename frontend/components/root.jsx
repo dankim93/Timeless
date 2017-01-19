@@ -7,7 +7,7 @@ import App from './app';
 import Splash from './splash/splash';
 import SessionFormContainer from './session_form/session_form_container';
 import UserContainer from './profile/profile_container';
-
+import AlbumShowContainer from './albums/album_show_container';
 
 
 const Root = ({ store }) => {
@@ -31,11 +31,13 @@ const Root = ({ store }) => {
       <Router history={ hashHistory }>
         <Route path="/" component={ App }>
           <IndexRoute component={Splash} />
-          <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
-          <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
-          <Route path='/users/:userId' component={UserContainer} onEnter={_ensureLoggedIn} >
-            <IndexRoute component={UserContainer} />
+          <Route path="login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
+          <Route path="signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
+          <Route path='users/:userId' component={UserContainer} onEnter={_ensureLoggedIn} >
             <Route path="photos" component={UserContainer} onEnter={_ensureLoggedIn} />
+            <Route path="albums" component={UserContainer} onEnter={_ensureLoggedIn} >
+              <Route path=":albumId" component={AlbumShowContainer} onEnter={_ensureLoggedIn} />
+            </Route>
 
           </Route>
         </Route>
@@ -44,6 +46,4 @@ const Root = ({ store }) => {
     </Provider>
   );
 };
-// <Route path="albums" component={UserContainer} onEnter={_ensureLoggedIn} />
-
 export default Root;

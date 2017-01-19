@@ -17,7 +17,8 @@ const ModalStyle = {
     bottom          : '300px',
     border          : '1px solid #ccc',
     padding         : '20px',
-    zIndex          : 11
+    zIndex          : 11,
+    width           : 'auto'
   }
 };
 

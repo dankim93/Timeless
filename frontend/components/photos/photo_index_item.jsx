@@ -41,13 +41,15 @@ class PhotoIndexItem extends React.Component {
             onRequestClose={this.closeModal}
             style={ModalStyle}>
 
-            <div className='modal-top'>
-              <p><img src={this.props.photo.image_url} /></p>
-              <p><button onClick={this.closeModal}>close</button></p>
-            </div>
-            <div>
-              <CommentContainer photoId={this.props.photo.id}/>
-            </div>
+            <section>
+              <p className='exit-button'><button onClick={this.closeModal}>close</button></p>
+              <div className='modal-top'>
+                <img src={this.props.photo.image_url} />
+              </div>
+              <div className='commentbox'>
+                <CommentContainer photoId={this.props.photo.id}/>
+              </div>
+            </section>
 
           </Modal>
 

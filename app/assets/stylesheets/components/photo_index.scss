@@ -68,15 +68,25 @@ img.to-modal:hover, img.photos-image:hover{
   cursor: pointer;
 }
 
-.modal-top img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1.5px solid lightgray;
-
-}
-
-.modal-top {
+p.exit-button {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
+
+div.commentbox {
+  display: flex;
+  justify-content: center;
+}
+// .modal-top img {
+//   width: 100%;
+//   height: auto;
+//   border-bottom: 1.5px solid lightgray;
+//
+// }
+//
+// .modal-top {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+// }

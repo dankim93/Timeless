@@ -26,7 +26,6 @@ class CommentForm extends React.Component {
     return e => this.setState({[prop]: e.target.value});
   }
   render() {
-    console.log(this.props.comments);
       const filterComments = (id) => {
         let result = [];
         this.props.comments.map(comment => {
@@ -43,10 +42,6 @@ class CommentForm extends React.Component {
 
       return(
         <section className='comment-form'>
-          <h3>Comments</h3>
-          <ul>
-            { displayComments }
-          </ul>
           <form onSubmit={this.handleSubmit.bind(this)}>
             <input
               type='type'
@@ -57,6 +52,10 @@ class CommentForm extends React.Component {
               onChange={this.update('body')}/>
             <button>Add</button>
           </form>
+          <h3>Comments</h3>
+          <ul>
+            { displayComments }
+          </ul>
         </section>
       );
     }

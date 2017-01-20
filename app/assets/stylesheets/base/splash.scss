@@ -16,3 +16,19 @@
   font-size: 45px;
   font-weight: bold;
 }
+
+section.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section.footer > a {
+  width:50px;
+  height: auto;
+}
+
+.linkedin {
+  margin-top: 10px;
+  width: 35px;
+}

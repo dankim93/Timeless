@@ -21,6 +21,7 @@ section.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border-bottom: 1.5px solid lightgray;
 }
 
 section.footer > a {

@@ -11,8 +11,6 @@ class AlbumShow extends React.Component {
   }
 
   render() {
-    console.log(this.props.albums);
-
 
     const filterAlbum = id => {
       let answer = '';

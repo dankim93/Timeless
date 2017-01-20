@@ -35,7 +35,7 @@ Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scal
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_52,w_1119/v1484934874/pexels-photo-26546_ft3jwh.jpg', title: 'Shopping', description: 'All of them', user_id: 2, album_id: 5)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_48,w_1016/v1484934859/eb6tchx5vzq-dozen_xq2yxe.jpg', title: 'SoCal', description: 'My hometown', user_id: 2, album_id: 5)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_47,w_1098/v1484934874/crkc1ws5e5k-dmitry-kotov_sfydrs.jpg', title: 'Glass Church', description: 'Get married at Palos Verdes?', user_id: 2, album_id: 5)
-Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,w_1045/', title: 'Unknown', description: 'Unknown', user_id: 2, album_id: 6)
+Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_56,w_1067/v1484934180/vncckgzd6bi-sandis-helvigs_yxlqlu.jpg', title: 'Unknown', description: 'Unknown', user_id: 2, album_id: 6)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_51,w_1092/v1484934877/ufomxgheugk-todd-diemer_c0xpul.jpg', title: 'Rain', description: 'I hate rain', user_id: 2, album_id: 6)
 
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484332442/pexels-photo-287240_kfac3f.jpg', title: 'Vacation', description: 'Hiking during summer', user_id: 3, album_id: 7)

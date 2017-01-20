@@ -43,11 +43,13 @@ class AlbumsItem extends React.Component {
       <li>
         <div>
           <h3>
-            <Link to={`/users/${this.props.album.user_id}/albums/${this.props.album.id}`}>{this.props.album.title}</Link>
-            {this.props.props.currentUser.id === this.props.album.user_id ?
-            <button onClick={this.handleDeleteClick.bind(this)}>Delete</button> : <a/>}
-            <button onClick={this.openModal}>Create Album</button>
-            <button onClick={this.openModal2}>Add Photo</button>
+            <section className='album-show'>
+              <Link to={`/users/${this.props.album.user_id}/albums/${this.props.album.id}`}>{this.props.album.title}: </Link>
+              <button onClick={this.openModal}>Create Album</button>
+              <button onClick={this.openModal2}>Add Photo</button>
+              {this.props.props.currentUser.id === this.props.album.user_id ?
+              <button onClick={this.handleDeleteClick.bind(this)}>Delete Album</button> : <a/>}
+            </section>
 
             <Modal
               contentLabel=''

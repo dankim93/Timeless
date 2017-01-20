@@ -1,0 +1,21 @@
+section.album-show {
+  display: flex;
+  justify-content: center;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 20px;
+}
+
+section.album-show > button {
+  font-size: 20px;
+}
+
+section.album-show > a {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+section.album-show > a:hover {
+  background-color: deepskyblue;
+  padding: 4px;
+}

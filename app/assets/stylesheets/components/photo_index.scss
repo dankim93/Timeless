@@ -78,6 +78,10 @@ div.commentbox {
   display: flex;
   justify-content: center;
 }
+
+a.photo-username:hover {
+  font-weight: bolder;
+}
 // .modal-top img {
 //   width: 100%;
 //   height: auto;

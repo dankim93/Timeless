@@ -36,7 +36,7 @@ const Root = ({ store }) => {
           <Route path='users/:userId' component={UserContainer} onEnter={_ensureLoggedIn} >
             <Route path="photos" component={UserContainer} onEnter={_ensureLoggedIn} />
             <Route path="albums" component={UserContainer} onEnter={_ensureLoggedIn} >
-              <Route path="/:albumId" component={AlbumShowContainer} onEnter={_ensureLoggedIn} />
+              <Route path=":albumId" component={AlbumShowContainer} onEnter={_ensureLoggedIn} />
             </Route>
 
           </Route>

@@ -33,7 +33,7 @@ class PhotoIndexItem extends React.Component {
           <Link to={`/users/${this.props.photo.user_id}`} className='photo-username'>{this.props.photo.username}</Link>
         </div>
         <div className='bot-pic'>
-          <img className='to-modal' onClick={this.openModal} src={this.props.photo.image_url} />
+          <Link to='login' className='to-modal' onClick={this.openModal}  ><img src={this.props.photo.image_url}/></Link>
 
           <Modal
             contentLabel=''

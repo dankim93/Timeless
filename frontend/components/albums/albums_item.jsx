@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
-import ModalStyle from '../photos/modal_style';
+import ModalStyle from '../profile/modal_style';
 import AlbumCreateFormContainer from './album_create_form_container';
+import PhotoCreateFormContainer from './photo_create_form_container';
 
 class AlbumsItem extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { modalOpen: false };
+    this.state = { modalOpen: false, modalOpen2: false };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.openModal2 = this.openModal2.bind(this);
+    this.closeModal2 = this.closeModal2.bind(this);
+
   }
 
   openModal() {
@@ -20,8 +24,15 @@ class AlbumsItem extends React.Component {
     this.setState({ modalOpen: false });
   }
 
-  handleDeleteClick(e) {
+  openModal2() {
+    this.setState({ modalOpen2: true });
+  }
 
+  closeModal2() {
+    this.setState({ modalOpen2: false });
+  }
+
+  handleDeleteClick(e) {
     e.preventDefault();
     this.props.props.deleteAlbum(this.props.album.id);
   }
@@ -36,6 +47,7 @@ class AlbumsItem extends React.Component {
             {this.props.props.currentUser.id === this.props.album.user_id ?
             <button onClick={this.handleDeleteClick.bind(this)}>Delete</button> : <a/>}
             <button onClick={this.openModal}>Create Album</button>
+            <button onClick={this.openModal2}>Add Photo</button>
 
             <Modal
               contentLabel=''
@@ -45,6 +57,20 @@ class AlbumsItem extends React.Component {
 
               <div>
                 <AlbumCreateFormContainer />
+                <Link onClick={this.closeModal}>close</Link>
+              </div>
+
+            </Modal>
+
+            <Modal
+              contentLabel=''
+              isOpen={this.state.modalOpen2}
+              onRequestClose={this.closeModal2}
+              style={ModalStyle}>
+
+              <div>
+                <PhotoCreateFormContainer albumId={this.props.album.id}/>
+                <Link onClick={this.closeModal2}>close</Link>
               </div>
 
             </Modal>

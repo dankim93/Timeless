@@ -1,5 +1,6 @@
 import React from 'react';
 import PhotoIndexContainer from '../photos/photo_index_container';
+import { Link } from 'react-router';
 
 class Splash extends React.Component {
 
@@ -7,7 +8,11 @@ class Splash extends React.Component {
     return(
       <div>
         <div className='splash'>
-          <h2 className='phrase'>Home of millions of pixels</h2>
+          <div>
+            <h2 className='phrase'>Home of millions of pixels</h2>
+            <br/>
+            <Link to='/login'>Start Exploring</Link>
+          </div>
         </div>
         <PhotoIndexContainer />
       </div>

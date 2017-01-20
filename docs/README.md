@@ -8,7 +8,7 @@
 
 ## Minimum Viable Product
 
-Timeless is a web application inspired by Flickr build using Ruby on Rails on the backend, PostgreSQL database, and React/Redux on the frontend.
+Timeless is a web application inspired by Flickr built using Ruby on Rails on the backend, PostgreSQL database, and React/Redux on the frontend.
 
 - [ ] Hosting on Heroku
 - [ ] New account creation, login, and guest/demo login

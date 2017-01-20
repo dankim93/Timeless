@@ -17,6 +17,16 @@
   font-weight: bold;
 }
 
+.splash > div {
+  text-align: center;
+}
+
+.splash a {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
 section.footer {
   display: flex;
   flex-direction: row;

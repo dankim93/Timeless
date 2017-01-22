@@ -19,3 +19,14 @@ section.album-show > a:hover {
   background-color: deepskyblue;
   padding: 4px;
 }
+
+.display-album-photos {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.album-title {
+  border: 1.5px solid black;
+
+}

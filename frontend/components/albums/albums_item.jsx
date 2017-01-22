@@ -44,7 +44,7 @@ class AlbumsItem extends React.Component {
         <div>
           <h3>
             <section className='album-show'>
-              <Link to={`/users/${this.props.album.user_id}/albums/${this.props.album.id}`}>{this.props.album.title}: </Link>
+              <Link to={`/users/${this.props.album.user_id}/albums/${this.props.album.id}`} className='album-title'>{this.props.album.title} </Link>
               <button onClick={this.openModal}>Create Album</button>
               <button onClick={this.openModal2}>Add Photo</button>
               {this.props.props.currentUser.id === this.props.album.user_id ?

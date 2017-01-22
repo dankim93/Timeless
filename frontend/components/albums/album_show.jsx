@@ -25,7 +25,7 @@ class AlbumShow extends React.Component {
 
     const displayAlbum = filterAlbum(this.props.albumId).photos.map(photo => <PhotosItem key={photo.id} photo={photo} />);
     return (
-    <ul>
+    <ul className='display-album-photos'>
       { displayAlbum }
     </ul>
     );

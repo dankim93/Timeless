@@ -4,12 +4,19 @@
   flex-wrap: wrap;
   align-items: center;
   border-top: 1.5px solid lightgray;
+  justify-content: center;
 
   // justify-content: center;
 }
 
 .small-image {
   width: 400px;
+  height: 100%;
   margin: 20px;
   border: 1.5px solid black;
+}
+
+img.photos-image:hover {
+  opacity: 0.6;
+  z-index: -100;
 }

@@ -66,6 +66,8 @@
 
 img.to-modal:hover, img.photos-image:hover{
   cursor: pointer;
+  opacity: 0.6;
+  z-index: -100;
 }
 
 p.exit-button {
@@ -82,15 +84,8 @@ div.commentbox {
 a.photo-username:hover {
   font-weight: bolder;
 }
-// .modal-top img {
-//   width: 100%;
-//   height: auto;
-//   border-bottom: 1.5px solid lightgray;
-//
-// }
-//
-// .modal-top {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-// }
+
+a.to-modal > img:hover {
+  opacity: 0.6;
+  z-index: -1000;
+}

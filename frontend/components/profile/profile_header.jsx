@@ -12,9 +12,37 @@ class ProfileHeader extends React.Component{
 
     constructor(props) {
       super(props);
-      this.state = { modalOpen: false };
+      this.state = {
+        modalOpen: false,
+        toggle1: '',
+        toggle2: 'toggle',
+        toggle3: ''};
       this.openModal = this.openModal.bind(this);
       this.closeModal = this.closeModal.bind(this);
+      this.handleClick1 = this.handleClick1.bind(this);
+      this.handleClick2 = this.handleClick2.bind(this);
+      this.handleClick3 = this.handleClick3.bind(this);
+    }
+
+    handleClick1() {
+      this.setState({
+        toggle1: 'toggle',
+        toggle2: '',
+        toggle3: ''});
+    }
+
+    handleClick2() {
+      this.setState({
+        toggle1: '',
+        toggle2: 'toggle',
+        toggle3: ''});
+    }
+
+    handleClick3() {
+      this.setState({
+        toggle1: '',
+        toggle2: '',
+        toggle3: 'toggle'});
     }
 
     openModal() {
@@ -38,9 +66,9 @@ class ProfileHeader extends React.Component{
           <h2 className='profile-name'>{this.props.user.username}</h2>
         </div>
         <div className='tab-bar'>
-          <Link to={`/users/${this.props.user.id}/photos`}>PHOTOS</Link>
-          <Link to={`/users/${this.props.user.id}`}>PHOTOSTREAM</Link>
-          <Link to={`/users/${this.props.user.id}/albums`}>ALBUMS</Link>
+          <Link to={`/users/${this.props.user.id}/photos`} className={this.state.toggle1} onClick={this.handleClick1}>PHOTOS</Link>
+          <Link to={`/users/${this.props.user.id}`} className={this.state.toggle2} onClick={this.handleClick2}>PHOTOSTREAM</Link>
+          <Link to={`/users/${this.props.user.id}/albums`} className={this.state.toggle3} onClick={this.handleClick3}>ALBUMS</Link>
           <button className="upload-button" onClick={this.openModal}>Upload</button>
           <Modal
             contentLabel=''

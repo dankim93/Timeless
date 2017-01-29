@@ -6,7 +6,7 @@ Timeless is a personal project by Dong Kim.
 
 ![] [home]
 
-[timeless]: http://www.timeless-project.us/#/
+[timeless]: http://www.project-timeless.space/#/
 [home]: ./docs/images/home2.png
 
 ## Features

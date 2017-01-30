@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import PhotoStream from './photo_stream';
-import { fetchPhotos } from '../../actions/photo_actions';
+import { fetchPhotos, deletePhoto } from '../../actions/photo_actions';
 import { fetchUser } from '../../actions/user_actions';
 
 const mapStateToProps = (state) => ({
@@ -10,7 +10,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchPhotos: (data) => dispatch(fetchPhotos(data)),
-  fetchUser: id => dispatch(fetchUser(id))
+  fetchUser: id => dispatch(fetchUser(id)),
+  deletePhoto: id => dispatch(deletePhoto(id))
 });
 
 export default connect(

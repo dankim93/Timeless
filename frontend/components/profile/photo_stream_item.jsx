@@ -21,6 +21,11 @@ class PhotoStreamItem extends React.Component {
     this.setState({ modalOpen: false });
   }
 
+  handleDeleteClick(e) {
+    e.preventDefault();
+    this.props.deletePhoto(this.props.photo.id);
+  }
+
   render() {
     return(
       <div className='photo-grid'>
@@ -39,6 +44,7 @@ class PhotoStreamItem extends React.Component {
 
             <section>
               <p className='exit-button'><button onClick={this.closeModal}>close</button></p>
+              <p className='exit-button'><button onClick={this.handleDeleteClick.bind(this)}>delete</button></p>
               <div className='modal-top'>
                 <img src={this.props.photo.image_url} />
               </div>

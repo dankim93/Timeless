@@ -9,7 +9,7 @@ class PhotoStream extends React.Component{
   render() {
     return(
       <ul className='photo-list'>
-        { this.props.photos.reverse().map(photo => <PhotoStreamItem key={photo.id} photo={photo} />) }
+        { this.props.photos.reverse().map(photo => <PhotoStreamItem key={photo.id} photo={photo} deletePhoto={this.props.deletePhoto} />) }
       </ul>
     );
   }

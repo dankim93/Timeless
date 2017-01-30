@@ -58,7 +58,7 @@ class AlbumsItem extends React.Component {
               style={ModalStyle}>
 
               <div>
-                <AlbumCreateFormContainer />
+                <AlbumCreateFormContainer closeModal={this.closeModal}/>
                 <Link onClick={this.closeModal}>close</Link>
               </div>
 
@@ -71,7 +71,9 @@ class AlbumsItem extends React.Component {
               style={ModalStyle}>
 
               <div>
-                <PhotoCreateFormContainer albumId={this.props.album.id}/>
+                <PhotoCreateFormContainer
+                  albumId={this.props.album.id}
+                  closeModal2={this.closeModal2} />
                 <Link onClick={this.closeModal2}>close</Link>
               </div>
 

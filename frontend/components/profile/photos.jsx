@@ -8,7 +8,7 @@ class Photos extends React.Component{
   render() {
     return(
       <ul className='photos-list'>
-        { this.props.photos.reverse().map(photo => <PhotosItem key={photo.id} photo={photo} />) }
+        { this.props.photos.reverse().map(photo => <PhotosItem key={photo.id} photo={photo} deletePhoto={this.props.deletePhoto} />) }
       </ul>
     );
   }

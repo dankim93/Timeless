@@ -70,7 +70,8 @@ class ProfileHeader extends React.Component{
           <Link to={`/users/${this.props.user.id}`} className={this.state.toggle2} onClick={this.handleClick2}>PHOTOSTREAM</Link>
           <Link to={`/users/${this.props.user.id}/albums`} className={this.state.toggle3} onClick={this.handleClick3}>ALBUMS</Link>
           <button className="upload-button" onClick={this.openModal}>Upload</button>
-          <Modal
+
+        <Modal
             contentLabel=''
             isOpen={this.state.modalOpen}
             onRequestClose={this.closeModal}
@@ -78,7 +79,8 @@ class ProfileHeader extends React.Component{
 
             <div className='upload-modal'>
               <PhotoUploadForm currentUser={this.props.currentUser}
-                createPhoto={this.props.createPhoto} />
+                createPhoto={this.props.createPhoto}
+                closeModal={this.closeModal} />
               <Link onClick={this.closeModal}>close</Link>
             </div>
           </Modal>

@@ -9,6 +9,8 @@ class PhotoUploadForm extends React.Component{
       image_url: '',
       user_id: this.props.currentUser.id
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleUpload(e) {
@@ -27,12 +29,12 @@ class PhotoUploadForm extends React.Component{
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createPhoto(this.state);
+    this.props.createPhoto(this.state).then(() => this.props.closeModal());
   }
 
   render() {
     return(
-      <form className='upload-form' onSubmit={this.handleSubmit.bind(this)}>
+      <form className='upload-form' onSubmit={this.handleSubmit}>
 
         <input
           className='form-div'

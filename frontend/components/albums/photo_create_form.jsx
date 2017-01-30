@@ -28,7 +28,7 @@ class PhotoCreateForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createPhoto(this.state);
+    this.props.createPhoto(this.state).then(() => this.props.closeModal2());
   }
 
   render() {

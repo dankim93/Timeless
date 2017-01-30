@@ -15,7 +15,7 @@ class AlbumCreateForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createAlbum(this.state);
+    this.props.createAlbum(this.state).then(() => this.props.closeModal());
   }
 
   render() {

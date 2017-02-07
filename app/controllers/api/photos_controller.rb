@@ -24,7 +24,7 @@ class Api::PhotosController < ApplicationController
     else
       p @photo.errors
       render json: @photo.errors.full_messages, status: 422
-      # render json: ['Invalid parameters'], status: 422
+
     end
   end
 

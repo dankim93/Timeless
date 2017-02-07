@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 //react components
 import App from './app';
-import Splash from './splash/splash';
+import SplashContainer from './splash/splash_container';
 import SessionFormContainer from './session_form/session_form_container';
 import UserContainer from './profile/profile_container';
 import AlbumShowContainer from './albums/album_show_container';
@@ -30,7 +30,7 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={ hashHistory }>
         <Route path="/" component={ App }>
-          <IndexRoute component={Splash} />
+          <IndexRoute component={SplashContainer} />
           <Route path="login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path='users/:userId' component={UserContainer} onEnter={_ensureLoggedIn} >

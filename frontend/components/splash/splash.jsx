@@ -8,6 +8,8 @@ class Splash extends React.Component {
   }
 
   render(){
+    console.log(this.props.currentUser);
+    console.log(this.props.state);
     if (this.props.currentUser) {
       return(
         <div>
@@ -15,7 +17,6 @@ class Splash extends React.Component {
             <div>
               <h2 className='phrase'>Home of millions of pixels</h2>
               <br/>
-              <Link to='/login' className='ignore' >Start Exploring</Link>
             </div>
           </div>
           <PhotoIndexContainer />

@@ -23,8 +23,13 @@
 
 .splash a {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
+}
+
+.splash a:hover {
+  background-color: deepskyblue;
+  opacity: 0.7;
 }
 
 section.footer {

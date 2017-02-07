@@ -8,8 +8,6 @@ class Splash extends React.Component {
   }
 
   render(){
-    console.log(this.props.currentUser);
-    console.log(this.props.state);
     if (this.props.currentUser) {
       return(
         <div>

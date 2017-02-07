@@ -59,7 +59,8 @@ form.login-form-box > h2{
 }
 
 .login-form-box input[type="button"],
-.login-form-box input[type="submit"]{
+.login-form-box input[type="submit"],
+button.demo {
     box-shadow: inset 0px 1px 0px 0px #45D6D6;
     background-color: #2CBBBB;
     border: 1px solid #27A0A0;
@@ -76,7 +77,8 @@ form.login-form-box > h2{
 }
 
 .login-form-box input[type="button"]:hover,
-.login-form-box input[type="submit"]:hover {
+.login-form-box input[type="submit"]:hover,
+button.demo:hover {
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
 }
@@ -94,4 +96,8 @@ form.login-form-box > h2{
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   color: red;
+}
+
+button.demo {
+  margin: 15px;
 }

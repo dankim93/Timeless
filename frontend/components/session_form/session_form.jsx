@@ -59,6 +59,8 @@ class SessionForm extends React.Component {
 
 	render() {
 		let button = this.props.formType === 'login' ? "Log In" : "Sign Up";
+		const guest = { user: {username: 'guest', password: 'password'}};
+
 		return (
 			<div className="login-form-container">
 				<form onSubmit={this.handleSubmit} className="login-form-box">
@@ -81,6 +83,7 @@ class SessionForm extends React.Component {
 								placeholder="Password" />
 						<br/>
 						<input type="submit" value={button} />
+						<button className="demo" onClick={() => this.setState(guest.user)}>Demo</button>
             {this.navLink()}
 
 					</div>

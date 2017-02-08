@@ -15,10 +15,12 @@ class PhotosItem extends React.Component {
 
   openModal() {
     this.setState({ modalOpen: true });
+    document.body.style.overflow = 'hidden';
   }
 
   closeModal() {
     this.setState({ modalOpen: false });
+    document.body.style.overflow = 'auto';
   }
 
   handleDeleteClick(e) {

@@ -18,18 +18,22 @@ class AlbumsItem extends React.Component {
 
   openModal() {
     this.setState({ modalOpen: true });
+    document.body.style.overflow = 'hidden';
   }
 
   closeModal() {
     this.setState({ modalOpen: false });
+    document.body.style.overflow = 'auto';
   }
 
   openModal2() {
     this.setState({ modalOpen2: true });
+    document.body.style.overflow = 'hidden';
   }
 
   closeModal2() {
     this.setState({ modalOpen2: false });
+    document.body.style.overflow = 'auto';
   }
 
   handleDeleteClick(e) {

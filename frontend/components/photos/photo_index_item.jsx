@@ -17,11 +17,13 @@ class PhotoIndexItem extends React.Component {
   openModal() {
     if (this.props.user) {
       this.setState({ modalOpen: true });
+      document.body.style.overflow = 'hidden';
     }
   }
 
   closeModal() {
     this.setState({ modalOpen: false });
+    document.body.style.overflow = 'auto';
   }
 
   render() {
@@ -39,7 +41,8 @@ class PhotoIndexItem extends React.Component {
             contentLabel=''
             isOpen={this.state.modalOpen}
             onRequestClose={this.closeModal}
-            style={ModalStyle}>
+            style={ModalStyle}
+            overlayClassName="overlay">
 
             <section>
               <p className='exit-button'><button onClick={this.closeModal}>close</button></p>

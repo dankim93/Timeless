@@ -11,15 +11,15 @@ const ModalStyle = {
   },
   content : {
     position        : 'fixed',
-    top             : '300px',
-    left            : '400px',
-    right           : '400px',
-    bottom          : '300px',
+    top             : '10%',
+    left            : '20%',
+    right           : '20%',
+    bottom          : '10%',
     border          : '1px solid #ccc',
     padding         : '20px',
     zIndex          : 11,
     width           : 'auto'
-  }
+  },
 };
 
 export default ModalStyle;

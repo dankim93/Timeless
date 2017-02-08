@@ -1,10 +1,11 @@
-const webpack = require("webpack");
+var webpack = require("webpack");
 
 module.exports = {
-  entry: './frontend/timeless.jsx',
+  context: __dirname,
+  entry: "./frontend/timeless.jsx",
   output: {
-    path: 'app/assets/javascripts',
-    filename: 'bundle.js',
+    path: "./app/assets/javascripts",
+    filename: "bundle.js"
   },
   plugins:[
     new webpack.DefinePlugin({
@@ -21,17 +22,17 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: [/\.jsx?$/, /\.js?$/],
-        exclude: /(node_modules)/,
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
         loader: 'babel',
         query: {
-          presets: ['es2015', 'react']
+          presets: ['react', 'es2015']
         }
       }
     ]
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['', '.js', '.jsx' ]
+    extensions: ["", ".js", ".jsx"]
   }
 };

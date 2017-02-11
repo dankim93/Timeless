@@ -1,6 +1,6 @@
-json.extract!(
-  comment,
-    :id, :body, :photo_id, :user_id
-)
-# json.set!(:username, photo.user.username)
-# json.set!(:profile_url, photo.user.profile_url)
+json.id comment.id
+json.body comment.body
+json.user_id comment.user_id
+json.photo_id comment.photo_id
+json.username comment.user.username
+json.profile_url comment.user.profile_url

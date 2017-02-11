@@ -7,27 +7,40 @@
   margin-top: 20px;
 }
 
+// .comment-form > form {
+//   width: 400px;
+//   height: 100px;
+// }
+
 .comment-form > h3 {
   font-weight: bolder;
   border-bottom: 1.5px solid black;
   align-items: center;
-
 }
 
 .comment-form input {
   border: 1.5px solid lightgray;
   padding-top: 1px;
   padding-bottom: 3px;
+  width: 80%;
 }
 
 .comment-form button {
-  background: rgb(66, 184, 221);
-  font-size: 14px;
+  background: #E0FFFF;
+  font-size: 10px;
   padding: 7px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin-top: -2px;
 }
 
 .comment-form ul {
   margin-left: 15px;
+}
+
+//comment item
+.comment-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }

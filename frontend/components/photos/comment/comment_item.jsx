@@ -13,12 +13,11 @@ class CommentItem extends React.Component {
   }
 
   render() {
-
     return(
       <li>
         <div>
-          <h3> {this.props.comment.body} {this.props.props.currentUser.id === this.props.comment.user_id ?
-            <button className='delete-button' onClick={this.handleDeleteClick.bind(this)}>Delete</button> : <a/>}</h3>
+            <p>{this.props.comment.username}: {this.props.comment.body} {this.props.props.currentUser.id === this.props.comment.user_id ?
+            <button className='delete-button' onClick={this.handleDeleteClick.bind(this)}>Delete</button> : <a/>}</p>
         </div>
       </li>
     );

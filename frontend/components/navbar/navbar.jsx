@@ -32,12 +32,11 @@ const personalStatus = (currentUser, logout) => (
       <Link to="/" className="logo-link">
         <h1 className='logo'>Timeless</h1>
       </Link>
-      <Link to={`/users/${currentUser.id}`} className='left-link'>You</Link>
       <Link to='/' className='left-link'>Explore</Link>
     </nav>
 
   	<nav className='login-signup'>
-      <h2 >Welcome, {currentUser.username}</h2>
+      <Link to={`/users/${currentUser.id}`} className='right-link'>Profile</Link>
       <button className='logout' onClick={logout}>Log Out</button>
   	</nav>
   </div>

@@ -42,6 +42,18 @@ div > nav > h2 {
   font-family: 'Indie Flower', cursive;
   font-size: 25px;
 }
+a.right-link {
+  padding: 15px;
+  margin: auto;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  font-size: 18px;
+}
+
+a.right-link:hover {
+  background-color: lightgray;
+}
 
 .login-signup > ul {
   display: flex;
@@ -88,12 +100,11 @@ a.left-link {
   margin-top: 15px;
   margin-bottom: 5px;
   border-radius: 1px;
-  background-color: rgba(0,0,0,0.1);
   border-radius: 4px;
 }
 
 a.left-link:hover {
-  background: deepskyblue;
+  background: lightgray;
 }
 
 div.navbar {

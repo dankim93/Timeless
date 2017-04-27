@@ -1,13 +1,12 @@
 # Timeless
 
-[Timeless] [timeless] is a single-page web application inspired by Flickr built using Ruby on Rails on the backend, PostgreSQL database, and React/Redux on the frontend.
+[Timeless] is a single-page web application inspired by Flickr built using Ruby on Rails on the backend, PostgreSQL database, and React/Redux on the frontend.
 
 Timeless is a personal project by Dong Kim.
 
-![] [home]
+![ ](./docs/images/home2.png)
 
-[timeless]: http://www.project-timeless.space/#/
-[home]: ./docs/images/home2.png
+[Timeless]: http://www.project-timeless.space/#/
 
 ## Features
 - User accounts creation with secure authentication with guest login
@@ -17,22 +16,21 @@ Timeless is a personal project by Dong Kim.
 - Profile page for each users with photos, photo stream, and albums view.
 - Comments availability on each Photo with management for each user.
 
-![] [signin]
+![ ](./docs/images/signin.png)
 
-![] [profile]
-[signin]: ./docs/images/signin.png
-[profile]: ./docs/images/profile2.png
+![ ](./docs/images/profile2.png)
+
 
 ## Project Design
 
 Timeless was designed and built in two weeks.
 
-  - Started with [proposal] [proposal] to plan out and make the skeleton of this project.
-  - [Database schema] [schema] and [sample state] [sample] was prepared with the proposal.
+  - Started with [proposal] to plan out and make the skeleton of this project.
+  - [Database schema] and [sample state] was prepared with the proposal.
 
 [proposal]: ./docs/README.md
-[schema]: ./docs/schema.md
-[sample]: ./docs/sample-state.md
+[Database schema]: ./docs/schema.md
+[sample state]: ./docs/sample-state.md
 ## Technology
 
 - ###### backend technology

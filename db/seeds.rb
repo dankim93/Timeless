@@ -66,7 +66,6 @@ Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scal
 
 
 
-
 Album.create(title: 'Daily life', user_id: 1)
 Album.create(title: 'Views', user_id: 1)
 Album.create(title: 'Hello World', user_id: 1)

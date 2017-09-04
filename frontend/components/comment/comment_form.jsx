@@ -25,6 +25,7 @@ class CommentForm extends React.Component {
   update(prop) {
     return e => this.setState({[prop]: e.target.value});
   }
+  
   render() {
       const filterComments = (id) => {
         let result = [];

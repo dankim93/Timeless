@@ -8,5 +8,4 @@ class Photo < ActiveRecord::Base
             foreign_key: :album_id,
             class_name: 'Album')
   has_many :comments
-
 end

@@ -20,6 +20,8 @@
 
 .comment-form input {
   border: 1.5px solid lightgray;
+  margin-left: -1px;
+  margin-top: -1px;
   padding-top: 1px;
   padding-bottom: 3px;
   width: 80%;
@@ -31,7 +33,6 @@
   padding: 14px;
   padding-top: 7px;
   padding-bottom: 5px;
-  margin-top: -1px;
 }
 
 button.delete-button {

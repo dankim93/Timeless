@@ -27,7 +27,6 @@ Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scal
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_52,w_1007/v1484934874/p2tq-3bh3oo-joshua-earle_rlwe9f.jpg', title: 'Backpacking', description: 'Whatever', user_id: 1, album_id: 2)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_61,w_1037/v1484934860/6xh7h5twj9c-arto-marttinen_nlq10r.jpg', title: 'Change', description: 'When everything else becomes smaller', user_id: 1, album_id: 2)
 
-Photo.create(image_url: 'http://www.visitberkeley.com/images/header-rotation/OrangeSky_full_web.jpg', title: 'Berkeley', description: 'San Francisco view from Berkeley', user_id: 2, album_id: 6)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484869964/vwhugalpsmcwnvgvk9zz.jpg', title: 'Timeless', description: 'Not affected by time', user_id: 2, album_id: 4)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_46,w_1101/v1484934876/q1p7bh3shj8-nasa_neezqw.jpg', title: 'Outer Space', description: 'One day...', user_id: 2, album_id: 4)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_57,w_1159/v1484934879/kr2mdhj5qmg-luke-chesser_jff2k9.jpg', title: 'Truth', description: 'Yup, she left', user_id: 2, album_id: 5)

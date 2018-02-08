@@ -6,7 +6,7 @@ Timeless is a personal project by Dong Kim.
 
 ![ ](./docs/images/home2.png)
 
-[Timeless]: http://www.project-timeless.space/#/
+[Timeless]: http://timeless-app.herokuapp.com/#/
 
 ## Features
 - User accounts creation with secure authentication with guest login

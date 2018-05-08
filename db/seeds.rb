@@ -9,7 +9,7 @@
 User.create(username: 'guest', password: 'password', profile_url: "http://res.cloudinary.com/dyjarpgbt/image/upload/c_crop,r_0/v1484533001/pexels-photo-63937_utf6qa.jpg")
 User.create(username: 'Dan Kim', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/girl-forest-nature-stroll-160627_ewnzti.jpg')
 User.create(username: 'Linn Marlen', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/pexels-photo-24648_fruerp.jpg')
-User.create(username: 'Elizabeth', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/pexels-photo-93017_nyf6o0.jpg')
+User.create(username: 'Kendall Jen', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/pexels-photo-93017_nyf6o0.jpg')
 User.create(username: 'Kavan Cardoza', password: 'password', profile_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484533190/pexels-photo-190956_n4t191.jpg')
 User.create(username: 'Richard Hertzog', password: 'password', profile_url: "http://res.cloudinary.com/dyjarpgbt/image/upload/v1484428136/pexels-photo-94645_vvyx9q.jpg")
 User.create(username: 'Lisa Houston', password: 'password', profile_url: "http://res.cloudinary.com/dyjarpgbt/image/upload/v1484851591/pexels-photo-196667_svoitr.jpg")
@@ -29,7 +29,7 @@ Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scal
 
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484869964/vwhugalpsmcwnvgvk9zz.jpg', title: 'Timeless', description: 'Not affected by time', user_id: 2, album_id: 4)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_46,w_1101/v1484934876/q1p7bh3shj8-nasa_neezqw.jpg', title: 'Outer Space', description: 'One day...', user_id: 2, album_id: 4)
-Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_57,w_1159/v1484934879/kr2mdhj5qmg-luke-chesser_jff2k9.jpg', title: 'Truth', description: 'Yup, she left', user_id: 2, album_id: 5)
+Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_57,w_1159/v1484934879/kr2mdhj5qmg-luke-chesser_jff2k9.jpg', title: 'Truth', description: 'Peaceful', user_id: 2, album_id: 5)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_49,w_1183/v1484934875/ohrodclnnu8-roman-mager_xvkqi7.jpg', title: 'Decision', description: 'Bike or Walk', user_id: 2, album_id: 5)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_52,w_1119/v1484934874/pexels-photo-26546_ft3jwh.jpg', title: 'Shopping', description: 'All of them', user_id: 2, album_id: 5)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_48,w_1016/v1484934859/eb6tchx5vzq-dozen_xq2yxe.jpg', title: 'SoCal', description: 'My hometown', user_id: 2, album_id: 5)
@@ -43,11 +43,11 @@ Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scal
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_59,w_1085/v1484934857/z0nvqfroqwa-denys-nevozhai_vvsoq7.jpg', title: 'Goal', description: 'Nothing special', user_id: 3, album_id: 7)
 
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484332576/sea-mountains-ocean-rocks_ahvnqa.jpg', title: 'SF', description: 'Golden Gate Bridge', user_id: 4, album_id: 8)
-Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_56,w_1131/v1484934879/jktv__bqmaa-brooke-lark_cvjee1.jpg', title: 'Breakfast', description: 'Because she loves breakfast more than anything', user_id: 4, album_id: 8)
-Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_52,w_831/v1484934876/vfun94cuy4o-david-marcu_yycktt.jpg', title: 'Biking', description: 'Biking with Dan', user_id: 4, album_id: 8)
+Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_56,w_1131/v1484934879/jktv__bqmaa-brooke-lark_cvjee1.jpg', title: 'Breakfast', description: 'Healthy', user_id: 4, album_id: 8)
+Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_52,w_831/v1484934876/vfun94cuy4o-david-marcu_yycktt.jpg', title: 'Biking', description: 'Chill', user_id: 4, album_id: 8)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/q_46/v1484934874/pexels-photo-209500_glol42.jpg', title: 'Coffee', description: 'Chugged it in 3 seconds', user_id: 4, album_id: 8)
-Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/q_54/v1484934874/pexels-photo-200749_rc6xux.jpg', title: 'Wall Street', description: '2014 spring vacation', user_id: 4, album_id: 8)
-Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_52,w_1152/v1484934858/bm0xrfeqm0a-michael-ramey_djczux.jpg', title: 'Leaving', description: '3 years', user_id: 4, album_id: 8)
+Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/q_54/v1484934874/pexels-photo-200749_rc6xux.jpg', title: 'Wall Street', description: 'Make oney', user_id: 4, album_id: 8)
+Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/c_scale,q_52,w_1152/v1484934858/bm0xrfeqm0a-michael-ramey_djczux.jpg', title: 'Cool', description: 'Bored', user_id: 4, album_id: 8)
 
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484332438/pexels-photo-200303_jkgqpy.jpg', title: 'Dual screen', description: 'Working with multi-screen', user_id: 5, album_id: 9)
 Photo.create(image_url: 'http://res.cloudinary.com/dyjarpgbt/image/upload/v1484523932/pexels-photo-203218_mbn8jt.jpg', title: 'Library', description: 'Study Time', user_id: 5, album_id: 9)
